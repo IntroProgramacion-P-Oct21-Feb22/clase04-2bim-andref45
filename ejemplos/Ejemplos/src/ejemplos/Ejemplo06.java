@@ -10,32 +10,34 @@ package ejemplos;
  * @author reroes
  */
 public class Ejemplo06 {
+
     static int suma = 0; // variable de alcance  global
-                        // se la puede usar e cualquier método
-                        // hemos declarado la variable statica
-                        // porque estamos usando método staticos
-                           
+    // se la puede usar e cualquier método
+    // hemos declarado la variable statica
+    // porque estamos usando método staticos
+
     public static void main(String[] args) {
         // 
-        
+
         obtenerSuma(10, 30);
         obtenerSumaDos();
-        System.out.printf("Valor de variable suma (main): %d\n", suma); 
-        
+        obtenerSumaDos();
+
+        //System.out.printf("Valor de variable suma (main): %d\n", suma); 
     }
-        
-    public static void obtenerSuma(int a, int b){
-        
+
+    public static void obtenerSuma(int a, int b) {
+
         suma = a + b; // 10 + 30
         System.out.printf("Valor de variable suma (obtenerSuma): %d\n", suma);  // 40 
-        
+
     }
-    
-    public static void obtenerSumaDos(){
-        
+
+    public static void obtenerSumaDos() {
+
         suma = suma + 100; // 40 + 100  // 140
         System.out.printf("Valor de variable suma (obtenerSumaDos): %d\n", suma); // 140
-        
+
     }
-    
+
 }
